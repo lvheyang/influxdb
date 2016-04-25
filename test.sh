@@ -151,7 +151,7 @@ case $ENVIRONMENT_INDEX in
         ;;
     3)
         # 32 bit tests
-        run_test_docker Dockerfile_build_ubuntu32 test_32bit --generate --test
+        run_test_docker Dockerfile_build_ubuntu32 test_32bit --generate --test --arch=i386
         rc=$?
         ;;
     4)
